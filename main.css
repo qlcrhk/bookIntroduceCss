@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    height: 2000px;
+}
+
+a {
+    text-decoration: none;
+}
+
+div,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.container {
+    margin-bottom: 100px;
+}
+
+/* 탑 메뉴 */
+@keyframes continue-turn {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    /* animation: continue-turn 7s linear infinite; */
+
+}
+
+.navbar {
+    margin: 0 auto;
+}
+
+
+.top-container {
+    display: flex;
+    background-image: url("/images/top-container-img.jpg");
+    height: 500px;
+    width: auto;
+    background-attachment: fixed;
+    background-size: 100% 500px;
+    background-repeat: no-repeat;
+
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+.list {
+    width: 150px;
+    font-weight: 500;
+    font-size: 20px;
+    float: left;
+    height: 50px;
+    margin: auto;
+    z-index: 2;
+
+}
+
+.list a {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: -20px 20px;
+    padding: 5px 10px
+}
+
+.contents {
+    color: white;
+}
+
+.main-title {
+    font-size: 70px;
+    font-weight: bold;
+    margin: 35px
+}
+
+.title-explain {
+    font-size: 17px;
+    font-weight: 300;
+}
+.btn{
+    text-transform: uppercase;
+    width: 200px;
+    font-size: 1.5em;
+    background-color: #0087BF;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+
+}
+.more {
+    padding: 10px 5px;
+    margin: 0px auto;
+    position: relative;
+    top: 30px;
+}
+
+/* 사용한 기슐 */
+
+.card {
+    width: 300px;
+    margin: 30px 20px;
+}
+
+.card img {
+    width: 200px;
+}
+
+/* git container */
+.git-container {
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 200px;
+    float: left;
+    background-color: #0087BF;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.git-container img {
+    width: 100px;
+    margin-right: 50px;
+}
+
+.git-container p {
+    font-size: 25px;
+    margin-right: 100px;
+}
+
+.git-container a {
+    color: white;
+    font-size: 25px;
+    margin-right: 100px;
+    border: white 3px solid;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+/* 장소 컨테이너 */
+.container3 h2 {
+    display: absolute;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.card-container {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.place-card img {
+    width: 250px;
+    height: 200px;
+    margin: 0 30px;
+}
+/* 추천 컨테이너 */
+
+.recommend-container {
+    position: relative;
+    background-image: url("/images/top-container-img.jpg");
+    height: 700px;
+    width: 100%; /* width 값을 auto 대신 100%로 변경 */
+    background-size: cover; /* 배경 이미지 크기를 cover로 변경 */
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.r-title{
+    color: white; 
+    font-size: 50px; 
+    font-weight: 600;
+    padding-top: 50px;
+}
+.r-container{
+    width: 86%;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.r-card{
+    background-color: white;
+    width: 500px;
+    height: 200px;
+    font-size: 13px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 30px;
+    vertical-align: top;
+}
+
+.r-card img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-top: 10px;
+}
+/* 작가 */
+
+.story {
+    display: flex;
+    justify-content: center;
+}
+
+.story div:first-child{
+    margin-right: 100px;
+}
+.author-img img {
+    width: 450px;
+    height: 400px;
+}
+
+footer {
+    color: white;
+    display: flex;
+    height: 300px;
+    background-color: #030D42;
+    justify-content: center;
+}
+
+.underline{
+    width: 150px;
+    border-top: white 1px solid;
+}
+footer .f-title{
+    margin-right: 50px;
+}
+
+footer div:first-child{
+ margin-right: 100px
+}
