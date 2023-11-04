@@ -8,24 +8,21 @@ body {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
-div,
-ul,
-li {
+div, ul, li {
     margin: 0;
     padding: 0;
     list-style: none;
-
 }
 
 .container {
     margin-bottom: 100px;
 }
 
-/* 탑 메뉴 */
 @keyframes continue-turn {
-    100%{
+    100% {
         transform: rotate(360deg);
     }
 }
@@ -34,13 +31,11 @@ li {
     width: 80px;
     height: 80px;
     /* animation: continue-turn 7s linear infinite; */
-
 }
 
 .navbar {
     margin: 0 auto;
 }
-
 
 .top-container {
     display: flex;
@@ -50,14 +45,10 @@ li {
     background-attachment: fixed;
     background-size: 100% 500px;
     background-repeat: no-repeat;
-
     text-align: center;
     justify-content: center;
     flex-direction: column;
 }
-
-
-
 
 .list {
     width: 150px;
@@ -67,7 +58,6 @@ li {
     height: 50px;
     margin: auto;
     z-index: 2;
-
 }
 
 .list a {
@@ -77,7 +67,7 @@ li {
     justify-content: center;
     height: 100%;
     margin: -20px 20px;
-    padding: 5px 10px
+    padding: 5px 10px;
 }
 
 .contents {
@@ -87,34 +77,40 @@ li {
 .main-title {
     font-size: 70px;
     font-weight: bold;
-    margin: 35px
+    margin: 35px;
 }
 
 .title-explain {
     font-size: 17px;
     font-weight: 300;
 }
-.btn{
+
+.btn {
     text-transform: uppercase;
     width: 200px;
     font-size: 1.5em;
     background-color: #0087BF;
     color: white;
     border-radius: 5px;
-    border: none;
     cursor: pointer;
-
-
+    border: none;
 }
+
 .more {
     padding: 10px 5px;
     margin: 0px auto;
     position: relative;
     top: 30px;
 }
+/* 사용기술 */
+.title{
+    font-size: 40px;
+    font-weight: 700;
+}
 
-/* 사용한 기슐 */
-
+.title-container{
+    text-align: center;
+}
 .card {
     width: 300px;
     margin: 30px 20px;
@@ -124,7 +120,7 @@ li {
     width: 200px;
 }
 
-/* git container */
+/* 깃 바로가기 */
 .git-container {
     display: flex;
     color: white;
@@ -143,21 +139,20 @@ li {
     margin-right: 50px;
 }
 
-.git-container p {
+.git-container p, .git-container a {
     font-size: 25px;
     margin-right: 100px;
-}
-
-.git-container a {
     color: white;
-    font-size: 25px;
-    margin-right: 100px;
-    border: white 3px solid;
-    padding: 5px 20px;
-    border-radius: 10px;
 }
-
-/* 장소 컨테이너 */
+.git-container a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    border: white solid 1px;
+    border-radius: 20px;
+}
 .container3 h2 {
     display: absolute;
     margin: 0px auto;
@@ -171,36 +166,36 @@ li {
     text-align: center;
 }
 
-.place-card img {
+/* 등장인물 */
+.p-card img {
     width: 250px;
     height: 200px;
     margin: 0 30px;
 }
-/* 추천 컨테이너 */
 
-.recommend-container {
+/* 리뷰 */
+.review-container {
     position: relative;
     background-image: url("/images/top-container-img.jpg");
     height: 700px;
-    width: 100%; /* width 값을 auto 대신 100%로 변경 */
-    background-size: cover; /* 배경 이미지 크기를 cover로 변경 */
+    width: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
 }
 
-.r-title{
-    color: white; 
-    font-size: 50px; 
-    font-weight: 600;
+.r-title {
+    color: white;
     padding-top: 50px;
 }
-.r-container{
+
+.r-container {
     width: 86%;
-    margin: 0 auto; 
+    margin: 0 auto;
     text-align: center;
 }
 
-.r-card{
+.r-card {
     background-color: white;
     width: 500px;
     height: 200px;
@@ -211,25 +206,34 @@ li {
     vertical-align: top;
 }
 
-.r-card img{
+.r-card img {
     width: 50px;
     height: 50px;
     border-radius: 100%;
     margin-top: 10px;
 }
-/* 작가 */
 
-.story {
+/* 작가 */
+.a-container {
     display: flex;
     justify-content: center;
 }
 
-.story div:first-child{
+.a-container div:first-child {
     margin-right: 100px;
 }
+
 .author-img img {
     width: 450px;
     height: 400px;
+}
+.author-img {
+    order: 2;
+}
+
+.a-intro {
+    order: 1;
+    margin-right: 30px;
 }
 
 footer {
@@ -240,14 +244,184 @@ footer {
     justify-content: center;
 }
 
-.underline{
+.underline {
     width: 150px;
     border-top: white 1px solid;
 }
-footer .f-title{
+
+.f-title:first-child .underline {
+    width: 300px;
+    border-top: white 1px solid;
+}
+
+footer .f-title {
     margin-right: 50px;
 }
 
-footer div:first-child{
- margin-right: 100px
+footer div:first-child {
+    margin-right: 100px;
+}
+
+
+
+@media all and (max-width:1023px) { 
+    .container {
+        margin-bottom: 50px;
+    }
+
+    .title{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    /* 탑 메뉴 */
+    .list{
+        font-size: 13px;
+        width: 80px;
+        font-weight: 500;
+        float: left;
+        height: 50px;
+        margin: auto;
+        z-index: 2;
+    }
+
+    .list img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .main-title{
+        font-size: 45px;
+        font-weight: 400;
+        margin: 35px;
+    }
+
+    .title-explain{
+        font-size: 12px;
+        font-weight: 200;
+    }
+
+    .btn {
+        text-transform: uppercase;
+        width: 150px;
+        font-size: 1em;
+        background-color: #0087BF;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+    }
+    /* 사용기술 */
+    .card {
+        width: 200px;
+        margin: 10px 20px;
+    }
+    
+    .card img {
+        width: 100px;
+    }
+/* git 바로가기 */
+    .git-container img {
+        width: 60px;
+        margin-right: 50px;
+    }
+    
+    .git-container p, .git-container a {
+        font-size: 15px;
+        margin-right: 70px;
+        color: white;
+    }
+    .git-container a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 50px;
+        border: white solid 1px;
+        border-radius: 20px;
+    }
+
+    /* 등장인물 */
+
+    .p-container {
+        margin-top: 50px;
+        display: block;
+    }
+
+    /* 리뷰 */
+    .review-container {
+        position: relative;
+        background-image: url("/images/top-container-img.jpg");
+        height: 1000px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    
+    .r-card {
+        background-color: white;
+        width: 300px;
+        height: 190px;
+        font-size: 13px;
+        display: inline-block;
+        margin-top: 20px;
+        font-size: 13px;
+    }
+    /* 작가 */
+
+    .a-container {
+        display: block;
+        text-align: center;
+    }
+    
+    .a-container div:first-child {
+        margin: 0 auto;
+    }
+    
+    .author-img img {
+        width: 350px;
+        height: 300px;
+    }
+    .author-img {
+        margin: 0 auto;
+
+    }
+    
+    .a-intro {
+        margin: 0 auto;
+        font-size: 11px;
+    }
+
+    .a-btn {
+        padding: 10px 20px;
+    }
+    /* footer */
+
+    footer {
+        color: white;
+        display: flex;
+        height: 200px;
+        background-color: #030D42;
+        justify-content: center;
+        font-size: 10px;
+    }
+    
+    .underline {
+        width: 70px;
+        border-top: white 1px solid;
+    }
+    
+    .f-title:first-child .underline {
+        width: 150px;
+        border-top: white 1px solid;
+    }
+    
+    footer .f-title {
+        margin-right: 10px;
+    }
+    
+     footer div:first-child {
+        margin-right: 10px;
+    } 
+    
 }
