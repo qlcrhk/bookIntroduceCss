@@ -202,7 +202,7 @@ div, ul, li {
     font-size: 13px;
     display: inline-block;
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 40px;
     vertical-align: top;
 }
 
@@ -255,13 +255,12 @@ footer {
 }
 
 footer .f-title {
-    margin-right: 50px;
-}
-
-footer div:first-child {
     margin-right: 100px;
 }
 
+footer .f-title:first-child {
+    margin-right:200px;
+}
 
 
 @media all and (max-width:1023px) { 

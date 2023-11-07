@@ -1,0 +1,142 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #f1f1f1;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo img{
+    width: 50px;
+    margin: 20px;
+}
+
+.bg-darkgray{
+    background-color: rgb(36, 36, 36);
+
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center; 
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 30px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+/* 푸터 */
+footer {
+    color: white;
+    display: flex;
+    height: 300px;
+    background-color: #030D42;
+    justify-content: center;
+}
+
+.underline {
+    width: 150px;
+    border-top: white 1px solid;
+}
+
+.f-title:first-child .underline {
+    width: 300px;
+    border-top: white 1px solid;
+}
+
+footer .f-title {
+    margin-right: 100px;
+}
+
+footer .f-title:first-child {
+    margin-right:200px;
+}
+
+.a-story{
+    width: 70%;
+    margin : 0 auto;
+}
+
+@media all and (max-width:1023px) { 
+
+    .container {
+        margin-bottom: 50px;
+    }
+
+
+    .logo {
+        display: block;
+        align-items: center; 
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .logo img{
+        width: 40px;
+        margin:20px 10px 0 10px;
+    }
+    
+    .navbar ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    .navbar ul li {
+        margin-right: 30px;
+        font-size: 10px;
+        padding: 5px;
+    }    
+
+    footer {
+        color: white;
+        display: flex;
+        height: 200px;
+        background-color: #030D42;
+        justify-content: center;
+        font-size: 10px;
+    }
+    
+    .underline {
+        width: 70px;
+        border-top: white 1px solid;
+    }
+    
+    .f-title:first-child .underline {
+        width: 150px;
+        border-top: white 1px solid;
+    }
+    
+    footer .f-title {
+        margin-right: 10px;
+    }
+    
+     footer .f-title:first-child {
+        margin-right: 10px;
+    } 
+    
+}

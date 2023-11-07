@@ -1,0 +1,181 @@
+.bg-img {
+    background-image: url("/images/author/책.jpg");
+    display: flex;
+    height: 500px;
+    width: auto;
+    background-attachment: fixed;
+    background-size: 100% 700px;
+    background-repeat: no-repeat;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.container {
+    margin-bottom: 70px;
+}
+
+/* 작가 카드 */
+.a-info {
+    display: flex;
+    margin: 0 auto;
+    margin-top: -40px;
+}
+
+.a-info div {
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.a-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.a-name p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.a-card {
+    background-color: white;
+    width: 70%;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* 작가소개,수상,대표작 컨테이너 */
+.a-story {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+/* 작가소개 */
+.a-intro p {
+    font-size: 20px;
+}
+
+/* 수상 */
+.a-prize p:nth-child(2) {
+    font-size: 20px;
+}
+
+
+
+.top-title {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* 주요작품 */
+
+.book-container {
+    display: flex;
+    justify-content: center;
+}
+
+.book-card {
+    text-align: center;
+    margin-left: 40px;
+    width: 300px;
+    background-color: #f1f1f1;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d4d3d3;
+}
+
+.book-card img {
+    width: 250px;
+}
+
+@media screen and (max-width: 768px) {
+    .bg-img {
+        height: 400px;
+    }
+
+    .top-title {
+        font-size: 45px;
+        font-weight: 400;
+        margin: 35px;
+    }
+
+    .a-card {
+        background-color: white;
+        width: 70%;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 20px;
+        display: block;
+    }
+
+    .a-card div {
+        display: block;
+        text-align: center;
+    }
+
+    .a-info {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 0px;
+    }
+
+    .a-info div {
+        margin-left: 0px;
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    /* 작가소개 */
+    .a-intro p {
+        font-size: 14px;
+    }
+
+    /* 수상 */
+    .a-prize p:nth-child(2) {
+        font-size: 14px;
+    }
+
+    /* 주요작품 */
+
+    .book-container {
+        display: block;
+    }
+
+    .book-card {
+        text-align: center;
+        width: 120px;
+        background-color: #f1f1f1;
+        height: 220px;
+        border: 1px solid #d4d3d3;
+        display: inline-block;
+        vertical-align: top; 
+        margin-top: 20px;
+    }
+
+    .book-card p {
+        font-size: 13px;
+    }
+    .book-card img {
+        width: 100px;
+        margin-top: 20px;
+    }
+}
