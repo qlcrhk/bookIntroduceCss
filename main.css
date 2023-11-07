@@ -419,7 +419,7 @@ footer .f-title:first-child {
         margin-right: 10px;
     }
     
-     footer div:first-child {
+     footer .f-title:first-child {
         margin-right: 10px;
     } 
     
