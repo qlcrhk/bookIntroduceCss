@@ -39,7 +39,7 @@ div, ul, li {
 
 .top-container {
     display: flex;
-    background-image: url("/images/top-container-img.jpg");
+    background-image: url("/images/index/top-container-img.jpg");
     height: 500px;
     width: auto;
     background-attachment: fixed;
@@ -176,7 +176,7 @@ div, ul, li {
 /* 리뷰 */
 .review-container {
     position: relative;
-    background-image: url("/images/top-container-img.jpg");
+    background-image: url("/images/index/top-container-img.jpg");
     height: 700px;
     width: 100%;
     background-size: cover;
@@ -349,7 +349,7 @@ footer .f-title:first-child {
     /* 리뷰 */
     .review-container {
         position: relative;
-        background-image: url("/images/top-container-img.jpg");
+        background-image: url("/images/index/top-container-img.jpg");
         height: 1000px;
         width: 100%;
         background-size: cover;

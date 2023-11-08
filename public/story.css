@@ -1,0 +1,166 @@
+.bg-img {
+    background-image: url("/images/story/openbook.jpg");
+    display: flex;
+    height: 500px;
+    width: auto;
+    background-attachment: fixed;
+    background-size: 100% 700px;
+    background-repeat: no-repeat;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.container {
+    margin-bottom: 100px;
+}
+
+.top-title {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/* 줄거리 */
+.b-container {
+    display: flex;
+    width: 80%;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.b-title {
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.book-summary {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-summary p {
+    margin-right: 50px;
+    margin-bottom: 0;
+    text-align: justify;
+    order: 1;
+}
+
+.b-story {
+    order: 1;
+}
+
+.b-img {
+    order: 2;
+}
+
+.book-summary img {
+    width: 250px;
+}
+
+.book-summary2 {
+    width: 60%;
+}
+
+.book-summary2 p {
+    margin-top: 0;
+}
+
+.good {
+    background-image: url("/images/story/촛불.jpg");
+    width: 800px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.good p {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 100px 30px 100px 30px;
+}
+
+@media all and (max-width:1024px) {
+    .container{
+        margin-bottom: 30px;
+    }
+    .bg-img {
+        background-image: url("/images/story/openbook.jpg");
+        display: flex;
+        height: 400px;
+        width: auto;
+        background-attachment: fixed;
+        background-size: 100% 500px;
+        background-repeat: no-repeat;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    /* 줄거리 */
+
+
+    .b-title {
+        font-size: 30px;
+    }
+
+    .book-summary {
+        width: 60%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .book-summary p {
+        margin-right:0px;
+        margin-bottom: 0;
+        text-align: justify;
+        order: 1;
+    }
+
+
+    .book-summary img {
+        width: 250px;
+    }
+
+    .book-summary2 {
+        width: 60%;
+    }
+
+    .book-summary2 p {
+        margin-top: 0;
+        text-align: justify;
+
+    }
+
+    /* 명언 */
+
+    .good {
+        background-image: url("/images/story/촛불.jpg");
+        background-size: 400px 300px;
+        width: 400px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .good p {
+        background-color: rgba(0, 0, 0, 0.5);
+        font-size: 17px;
+        color: white;
+        text-align: center;
+        padding: 50px 15px 50px 15px;
+    }
+}
