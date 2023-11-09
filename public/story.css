@@ -12,6 +12,7 @@
     margin-bottom: 100px;
 }
 
+
 .container {
     margin-bottom: 100px;
 }
@@ -25,7 +26,7 @@
 /* 줄거리 */
 .b-container {
     display: flex;
-    width: 80%;
+    width: 70%;
     background-color: white;
     flex-direction: column;
     justify-content: center;
@@ -35,13 +36,12 @@
 }
 
 .b-title {
+    width: 1000px;
     font-size: 40px;
-    text-align: center;
-
 }
 
 .book-summary {
-    width: 60%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,30 +54,29 @@
     order: 1;
 }
 
-.b-story {
-    order: 1;
-}
+
 
 .b-img {
-    order: 2;
+    border: rgba(61, 61, 61, 0.607) 1px solid;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    background-color: #f1f1f1;
 }
 
 .book-summary img {
     width: 250px;
-}
-
-.book-summary2 {
-    width: 60%;
-}
-
-.book-summary2 p {
-    margin-top: 0;
+    padding: 15px;
 }
 
 .good {
     background-image: url("/images/story/촛불.jpg");
-    width: 800px;
-    height: 500px;
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 700px;
+    background-size: 1000px 700px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,10 +90,40 @@
     padding: 100px 30px 100px 30px;
 }
 
+/* 리뷰 */
+
+.r-card {
+    background-color: white;
+    width: 900px;
+    height: 200px;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 40px;
+    vertical-align: top;
+    align-items: center;
+    font-size: 18px;
+    border: 1px solid rgb(42, 42, 42);
+}
+
+.r-card p{
+    margin-right: 20px;
+}
+.r-card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+
+
 @media all and (max-width:1024px) {
-    .container{
+    .container {
         margin-bottom: 30px;
     }
+
     .bg-img {
         background-image: url("/images/story/openbook.jpg");
         display: flex;
@@ -112,45 +141,46 @@
 
 
     .b-title {
+        width: 300px;
+        text-align: center;
         font-size: 30px;
     }
 
     .book-summary {
-        width: 60%;
+        width: 80%;
         display: block;
         align-items: center;
         justify-content: center;
     }
 
     .book-summary p {
-        margin-right:0px;
+        margin-right: 0px;
         margin-bottom: 0;
         text-align: justify;
         order: 1;
     }
 
 
+    .b-img {
+        border: none;
+        margin-right: 0px;
+        background-color: white;
+    }
+
     .book-summary img {
         width: 250px;
+        padding: 15px;
     }
 
-    .book-summary2 {
-        width: 60%;
-    }
 
-    .book-summary2 p {
-        margin-top: 0;
-        text-align: justify;
-
-    }
 
     /* 명언 */
 
     .good {
         background-image: url("/images/story/촛불.jpg");
-        background-size: 400px 300px;
-        width: 400px;
-        height: 300px;
+        background-size: 300px 200px;
+        width: 300px;
+        height: 200px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -163,4 +193,38 @@
         text-align: center;
         padding: 50px 15px 50px 15px;
     }
+    /* 후기 */
+
+    .r-card {
+        width: 300px;
+        height: 200px;
+        display: flex;
+        margin-top: 20px;
+        margin-left: 0px;
+        vertical-align: top;
+        align-items: center;
+        font-size: 13px;
+        flex-direction: column;
+        border: 1px solid rgb(42, 42, 42);
+        text-align: center;
+    }
+
+    .r-card:first-child {
+        height: 250px;
+
+    }
+
+    .r-card p{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .r-card img {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        margin-top: 10px;
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+    
 }

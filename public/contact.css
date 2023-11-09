@@ -1,0 +1,23 @@
+.bg-img {
+    background-image: url("/images/story/map.jpg");
+    display: flex;
+    height: 500px;
+    width: auto;
+    background-attachment: fixed;
+    background-size: 100% 700px;
+    background-repeat: no-repeat;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.container {
+    margin-bottom: 100px;
+}
+
+.top-title {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
