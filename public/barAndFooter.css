@@ -11,6 +11,7 @@ a{
 .logo img{
     width: 50px;
     margin: 20px;
+    border-radius: 100%;
 }
 
 .bg-darkgray{
