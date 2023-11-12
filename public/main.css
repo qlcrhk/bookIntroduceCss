@@ -29,6 +29,7 @@ div, ul, li {
 
 .logo {
     border-radius: 100%;
+    margin-top: -30px;
     width: 80px;
     height: 80px;
     /* animation: continue-turn 7s linear infinite; */
@@ -36,6 +37,13 @@ div, ul, li {
 
 .navbar {
     margin: 0 auto;
+}
+
+.navbar ul li .link:hover {
+    background-color: rgba(255, 255, 255, 0.775);
+    border: 1px solid rgba(255, 255, 255);
+    color: black;
+    transition: all 0.3s;
 }
 
 .top-container {
@@ -61,7 +69,7 @@ div, ul, li {
     z-index: 2;
 }
 
-.list a {
+.list .link {
     color: white;
     display: flex;
     align-items: center;
@@ -191,19 +199,19 @@ div, ul, li {
 }
 
 .r-container {
-    width: 86%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
 }
 
 .r-card {
     background-color: white;
-    width: 500px;
+    width: 550px;
     height: 200px;
     font-size: 13px;
     display: inline-block;
-    margin-top: 20px;
-    margin-left: 40px;
+    margin-top: 30px;
+    margin-left: 50px;
     vertical-align: top;
 }
 
@@ -274,9 +282,13 @@ footer .f-title:first-child {
         font-weight: 600;
     }
     /* 탑 메뉴 */
+    .logo {
+        margin-top: -16px;
+    }
+
     .list{
         font-size: 13px;
-        width: 80px;
+        width: 90px;
         font-weight: 500;
         float: left;
         height: 50px;
@@ -284,6 +296,9 @@ footer .f-title:first-child {
         z-index: 2;
     }
 
+    .list .link{
+        padding: 0 30px 0 30px;
+    }
     .list img{
         width: 40px;
         height: 40px;

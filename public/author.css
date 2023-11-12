@@ -162,7 +162,7 @@
 
     .book-card {
         text-align: center;
-        width: 120px;
+        width: 160px;
         background-color: #f1f1f1;
         height: 220px;
         border: 1px solid #d4d3d3;
@@ -175,7 +175,7 @@
         font-size: 13px;
     }
     .book-card img {
-        width: 100px;
+        width: 105px;
         margin-top: 20px;
     }
 }
